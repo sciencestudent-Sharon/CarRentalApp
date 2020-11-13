@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace Car_Rental
 {
-    public partial class Customer : Car_Rental.Form1
+    public partial class Customer : Form
     {
         public Customer()
         {
