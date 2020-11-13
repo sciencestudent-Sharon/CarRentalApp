@@ -169,11 +169,11 @@
             this.Logo.AutoSize = true;
             this.Logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Logo.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Logo.Location = new System.Drawing.Point(27, 27);
+            this.Logo.Location = new System.Drawing.Point(52, 27);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(159, 25);
+            this.Logo.Size = new System.Drawing.Size(114, 25);
             this.Logo.TabIndex = 1;
-            this.Logo.Text = "Car Rental uwu";
+            this.Logo.Text = "Car Rental";
             // 
             // panelTitleBar
             // 
@@ -206,7 +206,7 @@
             this.panelDesktop.TabIndex = 2;
             this.panelDesktop.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktop_Paint);
             // 
-            // FormMainMenu
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
