@@ -1,5 +1,4 @@
 # CMPT291_Assignment
-#
 ## Group 1
 
 Group Members:
