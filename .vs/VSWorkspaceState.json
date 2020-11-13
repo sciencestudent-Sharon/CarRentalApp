@@ -1,4 +1,12 @@
 {
+<<<<<<< HEAD
   "ExpandedNodes": [],
+=======
+  "ExpandedNodes": [
+    "",
+    "\\Car_Rental"
+  ],
+  "SelectedNode": "\\Car_Rental\\Car_Rental.sln",
+>>>>>>> 2ad1a1e6955c1f2868197b175dca4419f3cd6bec
   "PreviewInSolutionExplorer": false
 }
