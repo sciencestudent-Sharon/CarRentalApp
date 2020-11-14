@@ -36,5 +36,15 @@ namespace Car_Rental
         {
             
         }
+
+        private void labelCarType_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelCarVIN_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
