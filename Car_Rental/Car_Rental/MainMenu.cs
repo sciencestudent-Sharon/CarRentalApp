@@ -50,36 +50,40 @@ namespace Car_Rental
         }
 
         // button event handlers ---------------------------------------
-        private void btnCar_Click(object sender, EventArgs e)
+
+        private void btnBranches_Click(object sender, EventArgs e)
         {
-  
+     
         }
 
-        private void btnCustomer_Click(object sender, EventArgs e)
+        private void btnCars_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Cars(), sender);
+        }
+
+        private void btnCustomers_Click(object sender, EventArgs e)
         {
             OpenChildForm(new Customer(), sender);
         }
 
-        private void btnTransactions_Click(object sender, EventArgs e)
+        private void btnEmployees_Click(object sender, EventArgs e)
         {
  
         }
 
-        private void btnReturns_Click(object sender, EventArgs e)
+        private void btnRentals_Click(object sender, EventArgs e)
         {
+ 
+        }
 
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+ 
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            
+   
         }
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
-       
     }
 }
