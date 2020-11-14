@@ -46,6 +46,7 @@ namespace Car_Rental
             childForm.BringToFront();
             childForm.Show();
             labelTitle.Text = childForm.Text;
+
   
         }
 
@@ -63,7 +64,7 @@ namespace Car_Rental
 
         private void btnCustomers_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Customer(), sender);
+            OpenChildForm(new SearchCustomer(), sender);
         }
 
         private void btnEmployees_Click(object sender, EventArgs e)
@@ -84,6 +85,24 @@ namespace Car_Rental
         private void btnHome_Click(object sender, EventArgs e)
         {
    
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void BtnAdd_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Customer(), sender);
+
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

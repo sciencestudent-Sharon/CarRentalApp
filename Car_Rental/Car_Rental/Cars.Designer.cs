@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.Label labelCarType;
-            System.Windows.Forms.TextBox textBoxCarType;
             this.textBoxVIN = new System.Windows.Forms.TextBox();
             this.labelCarVIN = new System.Windows.Forms.Label();
             this.labelCarColor = new System.Windows.Forms.Label();
@@ -41,28 +40,10 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             labelCarType = new System.Windows.Forms.Label();
-            textBoxCarType = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelCarType
-            // 
-            labelCarType.AutoSize = true;
-            labelCarType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelCarType.Location = new System.Drawing.Point(80, 337);
-            labelCarType.Name = "labelCarType";
-            labelCarType.Size = new System.Drawing.Size(43, 20);
-            labelCarType.TabIndex = 7;
-            labelCarType.Text = "Type";
-            // 
-            // textBoxCarType
-            // 
-            textBoxCarType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            textBoxCarType.Location = new System.Drawing.Point(175, 334);
-            textBoxCarType.Name = "textBoxCarType";
-            textBoxCarType.Size = new System.Drawing.Size(160, 26);
-            textBoxCarType.TabIndex = 6;
             // 
             // textBoxVIN
             // 
@@ -76,21 +57,21 @@
             // 
             this.labelCarVIN.AutoSize = true;
             this.labelCarVIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarVIN.Location = new System.Drawing.Point(80, 156);
+            this.labelCarVIN.Location = new System.Drawing.Point(59, 159);
             this.labelCarVIN.Name = "labelCarVIN";
-            this.labelCarVIN.Size = new System.Drawing.Size(65, 20);
+            this.labelCarVIN.Size = new System.Drawing.Size(99, 20);
             this.labelCarVIN.TabIndex = 1;
-            this.labelCarVIN.Text = "Car VIN";
+            this.labelCarVIN.Text = "Customer ID";
             // 
             // labelCarColor
             // 
             this.labelCarColor.AutoSize = true;
             this.labelCarColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarColor.Location = new System.Drawing.Point(80, 217);
+            this.labelCarColor.Location = new System.Drawing.Point(45, 220);
             this.labelCarColor.Name = "labelCarColor";
-            this.labelCarColor.Size = new System.Drawing.Size(46, 20);
+            this.labelCarColor.Size = new System.Drawing.Size(124, 20);
             this.labelCarColor.TabIndex = 3;
-            this.labelCarColor.Text = "Color";
+            this.labelCarColor.Text = "Customer Name";
             // 
             // textBoxCarColor
             // 
@@ -104,11 +85,11 @@
             // 
             this.labelCarModel.AutoSize = true;
             this.labelCarModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarModel.Location = new System.Drawing.Point(80, 273);
+            this.labelCarModel.Location = new System.Drawing.Point(45, 276);
             this.labelCarModel.Name = "labelCarModel";
-            this.labelCarModel.Size = new System.Drawing.Size(52, 20);
+            this.labelCarModel.Size = new System.Drawing.Size(113, 20);
             this.labelCarModel.TabIndex = 5;
-            this.labelCarModel.Text = "Model";
+            this.labelCarModel.Text = "Phone number";
             // 
             // textBoxCarModel
             // 
@@ -167,18 +148,36 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // labelCarType
+            // 
+            labelCarType.AutoSize = true;
+            labelCarType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            labelCarType.Location = new System.Drawing.Point(81, 334);
+            labelCarType.Name = "labelCarType";
+            labelCarType.Size = new System.Drawing.Size(68, 20);
+            labelCarType.TabIndex = 7;
+            labelCarType.Text = "Address";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(175, 331);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(160, 26);
+            this.textBox1.TabIndex = 29;
+            // 
             // Cars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 567);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(labelCarType);
-            this.Controls.Add(textBoxCarType);
             this.Controls.Add(this.labelCarModel);
             this.Controls.Add(this.textBoxCarModel);
             this.Controls.Add(this.labelCarColor);
@@ -206,5 +205,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
