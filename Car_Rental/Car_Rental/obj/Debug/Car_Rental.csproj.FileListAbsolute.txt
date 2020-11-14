@@ -17,3 +17,4 @@ C:\Users\Erin\source\repos\CMPT291_Assignment\Car_Rental\Car_Rental\obj\Debug\Ca
 C:\Users\Erin\source\repos\CMPT291_Assignment\Car_Rental\Car_Rental\obj\Debug\Car_Rental.exe
 C:\Users\Erin\source\repos\CMPT291_Assignment\Car_Rental\Car_Rental\obj\Debug\Car_Rental.pdb
 C:\Users\Erin\source\repos\CMPT291_Assignment\Car_Rental\Car_Rental\obj\Debug\Car_Rental.MainMenu.resources
+C:\Users\Erin\source\repos\CMPT291_Assignment\Car_Rental\Car_Rental\obj\Debug\Car_Rental.Cars.resources
