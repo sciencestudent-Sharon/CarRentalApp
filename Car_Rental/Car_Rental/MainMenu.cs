@@ -54,7 +54,7 @@ namespace Car_Rental
 
         private void btnBranches_Click(object sender, EventArgs e)
         {
-     
+            OpenChildForm(new Branch(), sender);
         }
 
         private void btnCars_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace Car_Rental
 
         private void btnEmployees_Click(object sender, EventArgs e)
         {
- 
+            OpenChildForm(new SearchEmployee(), sender);
         }
 
         private void btnRentals_Click(object sender, EventArgs e)
@@ -84,7 +84,7 @@ namespace Car_Rental
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-   
+            
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -97,7 +97,6 @@ namespace Car_Rental
             OpenChildForm(new Customer(), sender);
 
         }
-
 
 
         private void button1_Click(object sender, EventArgs e)
