@@ -59,18 +59,20 @@ namespace Car_Rental
             // 
             this.EmpInfo_Label.AutoSize = true;
             this.EmpInfo_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpInfo_Label.Location = new System.Drawing.Point(302, 30);
+            this.EmpInfo_Label.Location = new System.Drawing.Point(226, 24);
+            this.EmpInfo_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.EmpInfo_Label.Name = "EmpInfo_Label";
-            this.EmpInfo_Label.Size = new System.Drawing.Size(247, 29);
+            this.EmpInfo_Label.Size = new System.Drawing.Size(193, 24);
             this.EmpInfo_Label.TabIndex = 0;
             this.EmpInfo_Label.Text = "Employee Information";
             // 
             // Edit_Button
             // 
             this.Edit_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edit_Button.Location = new System.Drawing.Point(57, 464);
+            this.Edit_Button.Location = new System.Drawing.Point(43, 377);
+            this.Edit_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Edit_Button.Name = "Edit_Button";
-            this.Edit_Button.Size = new System.Drawing.Size(176, 30);
+            this.Edit_Button.Size = new System.Drawing.Size(132, 24);
             this.Edit_Button.TabIndex = 1;
             this.Edit_Button.Text = "Edit";
             this.Edit_Button.UseVisualStyleBackColor = true;
@@ -78,18 +80,20 @@ namespace Car_Rental
             // FName_Tbox
             // 
             this.FName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FName_Tbox.Location = new System.Drawing.Point(162, 99);
+            this.FName_Tbox.Location = new System.Drawing.Point(122, 80);
+            this.FName_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FName_Tbox.Name = "FName_Tbox";
-            this.FName_Tbox.Size = new System.Drawing.Size(207, 27);
+            this.FName_Tbox.Size = new System.Drawing.Size(156, 23);
             this.FName_Tbox.TabIndex = 2;
             // 
             // FName_Label
             // 
             this.FName_Label.AutoSize = true;
             this.FName_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FName_Label.Location = new System.Drawing.Point(54, 102);
+            this.FName_Label.Location = new System.Drawing.Point(33, 83);
+            this.FName_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.FName_Label.Name = "FName_Label";
-            this.FName_Label.Size = new System.Drawing.Size(92, 20);
+            this.FName_Label.Size = new System.Drawing.Size(76, 17);
             this.FName_Label.TabIndex = 3;
             this.FName_Label.Text = "First Name";
             // 
@@ -97,81 +101,90 @@ namespace Car_Rental
             // 
             this.MiddleInit_Label.AutoSize = true;
             this.MiddleInit_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MiddleInit_Label.Location = new System.Drawing.Point(54, 130);
+            this.MiddleInit_Label.Location = new System.Drawing.Point(33, 106);
+            this.MiddleInit_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.MiddleInit_Label.Name = "MiddleInit_Label";
-            this.MiddleInit_Label.Size = new System.Drawing.Size(102, 20);
+            this.MiddleInit_Label.Size = new System.Drawing.Size(85, 17);
             this.MiddleInit_Label.TabIndex = 5;
             this.MiddleInit_Label.Text = "Middle Initial";
             // 
             // MiddleInit_Tbox
             // 
             this.MiddleInit_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MiddleInit_Tbox.Location = new System.Drawing.Point(162, 127);
+            this.MiddleInit_Tbox.Location = new System.Drawing.Point(122, 103);
+            this.MiddleInit_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MiddleInit_Tbox.Name = "MiddleInit_Tbox";
-            this.MiddleInit_Tbox.Size = new System.Drawing.Size(207, 27);
+            this.MiddleInit_Tbox.Size = new System.Drawing.Size(156, 23);
             this.MiddleInit_Tbox.TabIndex = 4;
             // 
             // EmpID_Label
             // 
             this.EmpID_Label.AutoSize = true;
             this.EmpID_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpID_Label.Location = new System.Drawing.Point(507, 99);
+            this.EmpID_Label.Location = new System.Drawing.Point(372, 82);
+            this.EmpID_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.EmpID_Label.Name = "EmpID_Label";
-            this.EmpID_Label.Size = new System.Drawing.Size(104, 20);
+            this.EmpID_Label.Size = new System.Drawing.Size(87, 17);
             this.EmpID_Label.TabIndex = 7;
             this.EmpID_Label.Text = "Employee ID";
             // 
             // EmpID_Tbox
             // 
             this.EmpID_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmpID_Tbox.Location = new System.Drawing.Point(617, 97);
+            this.EmpID_Tbox.Location = new System.Drawing.Point(463, 79);
+            this.EmpID_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.EmpID_Tbox.Name = "EmpID_Tbox";
-            this.EmpID_Tbox.Size = new System.Drawing.Size(160, 27);
+            this.EmpID_Tbox.Size = new System.Drawing.Size(121, 23);
             this.EmpID_Tbox.TabIndex = 6;
             // 
             // Address_Label
             // 
             this.Address_Label.AutoSize = true;
             this.Address_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Address_Label.Location = new System.Drawing.Point(56, 243);
+            this.Address_Label.Location = new System.Drawing.Point(42, 197);
+            this.Address_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Address_Label.Name = "Address_Label";
-            this.Address_Label.Size = new System.Drawing.Size(71, 20);
+            this.Address_Label.Size = new System.Drawing.Size(60, 17);
             this.Address_Label.TabIndex = 9;
             this.Address_Label.Text = "Address";
             // 
             // StName_Tbox
             // 
             this.StName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StName_Tbox.Location = new System.Drawing.Point(59, 280);
+            this.StName_Tbox.Location = new System.Drawing.Point(44, 228);
+            this.StName_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StName_Tbox.Name = "StName_Tbox";
-            this.StName_Tbox.Size = new System.Drawing.Size(132, 27);
+            this.StName_Tbox.Size = new System.Drawing.Size(100, 23);
             this.StName_Tbox.TabIndex = 8;
             // 
             // Zip_Label
             // 
             this.Zip_Label.AutoSize = true;
             this.Zip_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Zip_Label.Location = new System.Drawing.Point(371, 243);
+            this.Zip_Label.Location = new System.Drawing.Point(278, 197);
+            this.Zip_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Zip_Label.Name = "Zip_Label";
-            this.Zip_Label.Size = new System.Drawing.Size(31, 20);
+            this.Zip_Label.Size = new System.Drawing.Size(28, 17);
             this.Zip_Label.TabIndex = 11;
             this.Zip_Label.Text = "Zip";
             // 
             // Zip_Tbox
             // 
             this.Zip_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Zip_Tbox.Location = new System.Drawing.Point(374, 280);
+            this.Zip_Tbox.Location = new System.Drawing.Point(280, 228);
+            this.Zip_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Zip_Tbox.Name = "Zip_Tbox";
-            this.Zip_Tbox.Size = new System.Drawing.Size(128, 27);
+            this.Zip_Tbox.Size = new System.Drawing.Size(97, 23);
             this.Zip_Tbox.TabIndex = 10;
             // 
             // City_Label
             // 
             this.City_Label.AutoSize = true;
             this.City_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.City_Label.Location = new System.Drawing.Point(509, 243);
+            this.City_Label.Location = new System.Drawing.Point(382, 197);
+            this.City_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.City_Label.Name = "City_Label";
-            this.City_Label.Size = new System.Drawing.Size(38, 20);
+            this.City_Label.Size = new System.Drawing.Size(31, 17);
             this.City_Label.TabIndex = 13;
             this.City_Label.Text = "City";
             this.City_Label.Click += new System.EventHandler(this.label7_Click);
@@ -179,106 +192,117 @@ namespace Car_Rental
             // City_Tbox
             // 
             this.City_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.City_Tbox.Location = new System.Drawing.Point(512, 280);
+            this.City_Tbox.Location = new System.Drawing.Point(384, 228);
+            this.City_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.City_Tbox.Name = "City_Tbox";
-            this.City_Tbox.Size = new System.Drawing.Size(128, 27);
+            this.City_Tbox.Size = new System.Drawing.Size(97, 23);
             this.City_Tbox.TabIndex = 12;
             // 
             // Province_Label
             // 
             this.Province_Label.AutoSize = true;
             this.Province_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Province_Label.Location = new System.Drawing.Point(648, 243);
+            this.Province_Label.Location = new System.Drawing.Point(486, 197);
+            this.Province_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Province_Label.Name = "Province_Label";
-            this.Province_Label.Size = new System.Drawing.Size(74, 20);
+            this.Province_Label.Size = new System.Drawing.Size(63, 17);
             this.Province_Label.TabIndex = 15;
             this.Province_Label.Text = "Province";
             // 
             // Province_Tbox
             // 
             this.Province_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Province_Tbox.Location = new System.Drawing.Point(651, 280);
+            this.Province_Tbox.Location = new System.Drawing.Point(488, 228);
+            this.Province_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Province_Tbox.Name = "Province_Tbox";
-            this.Province_Tbox.Size = new System.Drawing.Size(128, 27);
+            this.Province_Tbox.Size = new System.Drawing.Size(97, 23);
             this.Province_Tbox.TabIndex = 14;
             // 
             // StreetNum_Tbox
             // 
             this.StreetNum_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StreetNum_Tbox.Location = new System.Drawing.Point(203, 280);
+            this.StreetNum_Tbox.Location = new System.Drawing.Point(152, 228);
+            this.StreetNum_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StreetNum_Tbox.Name = "StreetNum_Tbox";
-            this.StreetNum_Tbox.Size = new System.Drawing.Size(132, 27);
+            this.StreetNum_Tbox.Size = new System.Drawing.Size(100, 23);
             this.StreetNum_Tbox.TabIndex = 16;
             // 
             // LastName_Label
             // 
             this.LastName_Label.AutoSize = true;
             this.LastName_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastName_Label.Location = new System.Drawing.Point(54, 158);
+            this.LastName_Label.Location = new System.Drawing.Point(33, 128);
+            this.LastName_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LastName_Label.Name = "LastName_Label";
-            this.LastName_Label.Size = new System.Drawing.Size(91, 20);
+            this.LastName_Label.Size = new System.Drawing.Size(76, 17);
             this.LastName_Label.TabIndex = 18;
             this.LastName_Label.Text = "Last Name";
             // 
             // LastName_Tbox
             // 
             this.LastName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastName_Tbox.Location = new System.Drawing.Point(162, 155);
+            this.LastName_Tbox.Location = new System.Drawing.Point(122, 126);
+            this.LastName_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LastName_Tbox.Name = "LastName_Tbox";
-            this.LastName_Tbox.Size = new System.Drawing.Size(207, 27);
+            this.LastName_Tbox.Size = new System.Drawing.Size(156, 23);
             this.LastName_Tbox.TabIndex = 17;
             // 
             // PhNum_Label
             // 
             this.PhNum_Label.AutoSize = true;
             this.PhNum_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhNum_Label.Location = new System.Drawing.Point(54, 347);
+            this.PhNum_Label.Location = new System.Drawing.Point(40, 282);
+            this.PhNum_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.PhNum_Label.Name = "PhNum_Label";
-            this.PhNum_Label.Size = new System.Drawing.Size(120, 20);
+            this.PhNum_Label.Size = new System.Drawing.Size(103, 17);
             this.PhNum_Label.TabIndex = 20;
             this.PhNum_Label.Text = "Phone Number";
             // 
             // PhNum_Tbox
             // 
             this.PhNum_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhNum_Tbox.Location = new System.Drawing.Point(57, 380);
+            this.PhNum_Tbox.Location = new System.Drawing.Point(43, 309);
+            this.PhNum_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PhNum_Tbox.Name = "PhNum_Tbox";
-            this.PhNum_Tbox.Size = new System.Drawing.Size(160, 27);
+            this.PhNum_Tbox.Size = new System.Drawing.Size(121, 23);
             this.PhNum_Tbox.TabIndex = 19;
             // 
             // BranchID_Label
             // 
             this.BranchID_Label.AutoSize = true;
             this.BranchID_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BranchID_Label.Location = new System.Drawing.Point(507, 141);
+            this.BranchID_Label.Location = new System.Drawing.Point(372, 117);
+            this.BranchID_Label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BranchID_Label.Name = "BranchID_Label";
-            this.BranchID_Label.Size = new System.Drawing.Size(85, 20);
+            this.BranchID_Label.Size = new System.Drawing.Size(70, 17);
             this.BranchID_Label.TabIndex = 22;
             this.BranchID_Label.Text = "Branch ID";
             // 
             // BranchID_Tbox
             // 
             this.BranchID_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BranchID_Tbox.Location = new System.Drawing.Point(617, 139);
+            this.BranchID_Tbox.Location = new System.Drawing.Point(463, 113);
+            this.BranchID_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BranchID_Tbox.Name = "BranchID_Tbox";
-            this.BranchID_Tbox.Size = new System.Drawing.Size(160, 27);
+            this.BranchID_Tbox.Size = new System.Drawing.Size(121, 23);
             this.BranchID_Tbox.TabIndex = 21;
             // 
             // Save_Button
             // 
             this.Save_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Save_Button.Location = new System.Drawing.Point(617, 464);
+            this.Save_Button.Location = new System.Drawing.Point(463, 377);
+            this.Save_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Save_Button.Name = "Save_Button";
-            this.Save_Button.Size = new System.Drawing.Size(176, 30);
+            this.Save_Button.Size = new System.Drawing.Size(132, 24);
             this.Save_Button.TabIndex = 23;
             this.Save_Button.Text = "Save";
             this.Save_Button.UseVisualStyleBackColor = true;
             // 
             // Employee
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 568);
+            this.ClientSize = new System.Drawing.Size(668, 462);
             this.Controls.Add(this.Save_Button);
             this.Controls.Add(this.BranchID_Label);
             this.Controls.Add(this.BranchID_Tbox);
@@ -303,6 +327,7 @@ namespace Car_Rental
             this.Controls.Add(this.FName_Tbox);
             this.Controls.Add(this.Edit_Button);
             this.Controls.Add(this.EmpInfo_Label);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Employee";
             this.Text = "Employee";
             this.Load += new System.EventHandler(this.Employee_Load);
