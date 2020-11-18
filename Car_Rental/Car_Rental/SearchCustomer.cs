@@ -19,9 +19,10 @@ namespace Car_Rental
         }
 
 
-        public void addCustomer_Click(object sender, EventArgs e)
+        public void btnAdd_Click(object sender, EventArgs e)
         {
-
+            Customer c = new Customer();
+            c.ShowDialog();
         }
 
         private void labelCarVIN_Click(object sender, EventArgs e)
@@ -29,9 +30,5 @@ namespace Car_Rental
 
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

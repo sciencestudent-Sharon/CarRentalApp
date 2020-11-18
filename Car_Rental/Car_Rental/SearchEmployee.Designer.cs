@@ -54,6 +54,7 @@ namespace Car_Rental
             this.Add_Button.TabIndex = 0;
             this.Add_Button.Text = "Add";
             this.Add_Button.UseVisualStyleBackColor = true;
+            this.Add_Button.Click += new System.EventHandler(this.Add_Button_Click);
             // 
             // EmpID_Label
             // 
@@ -188,7 +189,7 @@ namespace Car_Rental
             this.Controls.Add(this.EmpID_Tbox);
             this.Controls.Add(this.EmpID_Label);
             this.Controls.Add(this.Add_Button);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "SearchEmployee";
             this.Text = "Employee";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
