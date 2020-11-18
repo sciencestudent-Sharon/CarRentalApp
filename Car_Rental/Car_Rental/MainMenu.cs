@@ -74,7 +74,7 @@ namespace Car_Rental
 
         private void btnRentals_Click(object sender, EventArgs e)
         {
- 
+            OpenChildForm(new Rental(), sender);
         }
 
         private void btnReports_Click(object sender, EventArgs e)
