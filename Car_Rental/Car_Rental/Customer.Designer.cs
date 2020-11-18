@@ -48,11 +48,10 @@
             this.StName_Tbox = new System.Windows.Forms.TextBox();
             this.StNum_Tbox = new System.Windows.Forms.TextBox();
             this.AptNum_Tbox = new System.Windows.Forms.TextBox();
-            this.Membership_Tbox = new System.Windows.Forms.TextBox();
             this.CustomerID_Label = new System.Windows.Forms.Label();
             this.CustID_Tbox = new System.Windows.Forms.TextBox();
-            this.Edit_Button = new System.Windows.Forms.Button();
             this.Save_Button = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // NewCust_Label
@@ -243,14 +242,6 @@
             this.AptNum_Tbox.Size = new System.Drawing.Size(115, 24);
             this.AptNum_Tbox.TabIndex = 20;
             // 
-            // Membership_Tbox
-            // 
-            this.Membership_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Membership_Tbox.Location = new System.Drawing.Point(46, 412);
-            this.Membership_Tbox.Name = "Membership_Tbox";
-            this.Membership_Tbox.Size = new System.Drawing.Size(246, 24);
-            this.Membership_Tbox.TabIndex = 21;
-            // 
             // CustomerID_Label
             // 
             this.CustomerID_Label.AutoSize = true;
@@ -270,32 +261,31 @@
             this.CustID_Tbox.Size = new System.Drawing.Size(246, 24);
             this.CustID_Tbox.TabIndex = 23;
             // 
-            // Edit_Button
-            // 
-            this.Edit_Button.Location = new System.Drawing.Point(46, 521);
-            this.Edit_Button.Name = "Edit_Button";
-            this.Edit_Button.Size = new System.Drawing.Size(208, 33);
-            this.Edit_Button.TabIndex = 24;
-            this.Edit_Button.Text = "Edit";
-            this.Edit_Button.UseVisualStyleBackColor = true;
-            // 
             // Save_Button
             // 
-            this.Save_Button.Location = new System.Drawing.Point(658, 521);
+            this.Save_Button.Location = new System.Drawing.Point(318, 520);
             this.Save_Button.Name = "Save_Button";
             this.Save_Button.Size = new System.Drawing.Size(208, 33);
             this.Save_Button.TabIndex = 25;
             this.Save_Button.Text = "Save";
             this.Save_Button.UseVisualStyleBackColor = true;
+            this.Save_Button.Click += new System.EventHandler(this.Save_Button_Click_1);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(46, 412);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(245, 25);
+            this.comboBox1.TabIndex = 26;
             // 
             // Customer
             // 
             this.ClientSize = new System.Drawing.Size(916, 642);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Save_Button);
-            this.Controls.Add(this.Edit_Button);
             this.Controls.Add(this.CustID_Tbox);
             this.Controls.Add(this.CustomerID_Label);
-            this.Controls.Add(this.Membership_Tbox);
             this.Controls.Add(this.AptNum_Tbox);
             this.Controls.Add(this.StNum_Tbox);
             this.Controls.Add(this.StName_Tbox);
@@ -346,10 +336,9 @@
         private System.Windows.Forms.TextBox StName_Tbox;
         private System.Windows.Forms.TextBox StNum_Tbox;
         private System.Windows.Forms.TextBox AptNum_Tbox;
-        private System.Windows.Forms.TextBox Membership_Tbox;
         private System.Windows.Forms.Label CustomerID_Label;
         private System.Windows.Forms.TextBox CustID_Tbox;
-        private System.Windows.Forms.Button Edit_Button;
         private System.Windows.Forms.Button Save_Button;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

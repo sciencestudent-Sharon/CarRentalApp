@@ -84,6 +84,12 @@ namespace Car_Rental
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+
+            if (activeForm != null) 
+            {
+                activeForm.Close();
+                labelTitle.Text = "Home";
+            }
             
         }
 
@@ -103,5 +109,6 @@ namespace Car_Rental
         {
 
         }
+
     }
 }

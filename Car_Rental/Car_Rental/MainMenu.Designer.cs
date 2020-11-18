@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.Logo = new System.Windows.Forms.Label();
-            this.panelTitleBar = new System.Windows.Forms.Panel();
-            this.labelTitle = new System.Windows.Forms.Label();
-            this.panelDesktop = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnRentals = new System.Windows.Forms.Button();
@@ -41,6 +36,11 @@
             this.btnCustomers = new System.Windows.Forms.Button();
             this.btnCars = new System.Windows.Forms.Button();
             this.btnBranches = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.Logo = new System.Windows.Forms.Label();
+            this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -62,57 +62,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(220, 607);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelLogo.Controls.Add(this.Logo);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 80);
-            this.panelLogo.TabIndex = 1;
-            // 
-            // Logo
-            // 
-            this.Logo.AutoSize = true;
-            this.Logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Logo.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.Logo.Location = new System.Drawing.Point(52, 27);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(114, 25);
-            this.Logo.TabIndex = 1;
-            this.Logo.Text = "Car Rental";
-            // 
-            // panelTitleBar
-            // 
-            this.panelTitleBar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelTitleBar.Controls.Add(this.labelTitle);
-            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(913, 80);
-            this.panelTitleBar.TabIndex = 1;
-            // 
-            // labelTitle
-            // 
-            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTitle.AutoSize = true;
-            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.labelTitle.Location = new System.Drawing.Point(414, 26);
-            this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(78, 26);
-            this.labelTitle.TabIndex = 0;
-            this.labelTitle.Text = "HOME";
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 0);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(913, 607);
-            this.panelDesktop.TabIndex = 2;
             // 
             // btnHome
             // 
@@ -246,6 +195,57 @@
             this.btnBranches.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnBranches.UseVisualStyleBackColor = true;
             this.btnBranches.Click += new System.EventHandler(this.btnBranches_Click);
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelLogo.Controls.Add(this.Logo);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(220, 80);
+            this.panelLogo.TabIndex = 1;
+            // 
+            // Logo
+            // 
+            this.Logo.AutoSize = true;
+            this.Logo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Logo.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.Logo.Location = new System.Drawing.Point(52, 27);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(114, 25);
+            this.Logo.TabIndex = 1;
+            this.Logo.Text = "Car Rental";
+            // 
+            // panelTitleBar
+            // 
+            this.panelTitleBar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panelTitleBar.Controls.Add(this.labelTitle);
+            this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.panelTitleBar.Name = "panelTitleBar";
+            this.panelTitleBar.Size = new System.Drawing.Size(913, 80);
+            this.panelTitleBar.TabIndex = 1;
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.labelTitle.Location = new System.Drawing.Point(414, 26);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(71, 26);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "Home";
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 0);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(913, 607);
+            this.panelDesktop.TabIndex = 2;
             // 
             // MainMenu
             // 

@@ -30,7 +30,6 @@ namespace Car_Rental
         private void InitializeComponent()
         {
             this.EmpInfo_Label = new System.Windows.Forms.Label();
-            this.Edit_Button = new System.Windows.Forms.Button();
             this.FName_Tbox = new System.Windows.Forms.TextBox();
             this.FName_Label = new System.Windows.Forms.Label();
             this.MiddleInit_Label = new System.Windows.Forms.Label();
@@ -66,22 +65,11 @@ namespace Car_Rental
             this.EmpInfo_Label.TabIndex = 0;
             this.EmpInfo_Label.Text = "Employee Information";
             // 
-            // Edit_Button
-            // 
-            this.Edit_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edit_Button.Location = new System.Drawing.Point(43, 377);
-            this.Edit_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Edit_Button.Name = "Edit_Button";
-            this.Edit_Button.Size = new System.Drawing.Size(132, 24);
-            this.Edit_Button.TabIndex = 1;
-            this.Edit_Button.Text = "Edit";
-            this.Edit_Button.UseVisualStyleBackColor = true;
-            // 
             // FName_Tbox
             // 
             this.FName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FName_Tbox.Location = new System.Drawing.Point(122, 80);
-            this.FName_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.FName_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.FName_Tbox.Name = "FName_Tbox";
             this.FName_Tbox.Size = new System.Drawing.Size(156, 23);
             this.FName_Tbox.TabIndex = 2;
@@ -112,7 +100,7 @@ namespace Car_Rental
             // 
             this.MiddleInit_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MiddleInit_Tbox.Location = new System.Drawing.Point(122, 103);
-            this.MiddleInit_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MiddleInit_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.MiddleInit_Tbox.Name = "MiddleInit_Tbox";
             this.MiddleInit_Tbox.Size = new System.Drawing.Size(156, 23);
             this.MiddleInit_Tbox.TabIndex = 4;
@@ -132,7 +120,7 @@ namespace Car_Rental
             // 
             this.EmpID_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmpID_Tbox.Location = new System.Drawing.Point(463, 79);
-            this.EmpID_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EmpID_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.EmpID_Tbox.Name = "EmpID_Tbox";
             this.EmpID_Tbox.Size = new System.Drawing.Size(121, 23);
             this.EmpID_Tbox.TabIndex = 6;
@@ -152,7 +140,7 @@ namespace Car_Rental
             // 
             this.StName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StName_Tbox.Location = new System.Drawing.Point(44, 228);
-            this.StName_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StName_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.StName_Tbox.Name = "StName_Tbox";
             this.StName_Tbox.Size = new System.Drawing.Size(100, 23);
             this.StName_Tbox.TabIndex = 8;
@@ -172,7 +160,7 @@ namespace Car_Rental
             // 
             this.Zip_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Zip_Tbox.Location = new System.Drawing.Point(280, 228);
-            this.Zip_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Zip_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.Zip_Tbox.Name = "Zip_Tbox";
             this.Zip_Tbox.Size = new System.Drawing.Size(97, 23);
             this.Zip_Tbox.TabIndex = 10;
@@ -193,7 +181,7 @@ namespace Car_Rental
             // 
             this.City_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.City_Tbox.Location = new System.Drawing.Point(384, 228);
-            this.City_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.City_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.City_Tbox.Name = "City_Tbox";
             this.City_Tbox.Size = new System.Drawing.Size(97, 23);
             this.City_Tbox.TabIndex = 12;
@@ -213,7 +201,7 @@ namespace Car_Rental
             // 
             this.Province_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Province_Tbox.Location = new System.Drawing.Point(488, 228);
-            this.Province_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Province_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.Province_Tbox.Name = "Province_Tbox";
             this.Province_Tbox.Size = new System.Drawing.Size(97, 23);
             this.Province_Tbox.TabIndex = 14;
@@ -222,7 +210,7 @@ namespace Car_Rental
             // 
             this.StreetNum_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StreetNum_Tbox.Location = new System.Drawing.Point(152, 228);
-            this.StreetNum_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StreetNum_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.StreetNum_Tbox.Name = "StreetNum_Tbox";
             this.StreetNum_Tbox.Size = new System.Drawing.Size(100, 23);
             this.StreetNum_Tbox.TabIndex = 16;
@@ -242,7 +230,7 @@ namespace Car_Rental
             // 
             this.LastName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LastName_Tbox.Location = new System.Drawing.Point(122, 126);
-            this.LastName_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LastName_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.LastName_Tbox.Name = "LastName_Tbox";
             this.LastName_Tbox.Size = new System.Drawing.Size(156, 23);
             this.LastName_Tbox.TabIndex = 17;
@@ -262,7 +250,7 @@ namespace Car_Rental
             // 
             this.PhNum_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PhNum_Tbox.Location = new System.Drawing.Point(43, 309);
-            this.PhNum_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PhNum_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.PhNum_Tbox.Name = "PhNum_Tbox";
             this.PhNum_Tbox.Size = new System.Drawing.Size(121, 23);
             this.PhNum_Tbox.TabIndex = 19;
@@ -282,7 +270,7 @@ namespace Car_Rental
             // 
             this.BranchID_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BranchID_Tbox.Location = new System.Drawing.Point(463, 113);
-            this.BranchID_Tbox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BranchID_Tbox.Margin = new System.Windows.Forms.Padding(2);
             this.BranchID_Tbox.Name = "BranchID_Tbox";
             this.BranchID_Tbox.Size = new System.Drawing.Size(121, 23);
             this.BranchID_Tbox.TabIndex = 21;
@@ -290,13 +278,14 @@ namespace Car_Rental
             // Save_Button
             // 
             this.Save_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Save_Button.Location = new System.Drawing.Point(463, 377);
-            this.Save_Button.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Save_Button.Location = new System.Drawing.Point(266, 394);
+            this.Save_Button.Margin = new System.Windows.Forms.Padding(2);
             this.Save_Button.Name = "Save_Button";
             this.Save_Button.Size = new System.Drawing.Size(132, 24);
             this.Save_Button.TabIndex = 23;
             this.Save_Button.Text = "Save";
             this.Save_Button.UseVisualStyleBackColor = true;
+            this.Save_Button.Click += new System.EventHandler(this.Save_Button_Click);
             // 
             // Employee
             // 
@@ -325,9 +314,8 @@ namespace Car_Rental
             this.Controls.Add(this.MiddleInit_Tbox);
             this.Controls.Add(this.FName_Label);
             this.Controls.Add(this.FName_Tbox);
-            this.Controls.Add(this.Edit_Button);
             this.Controls.Add(this.EmpInfo_Label);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Employee";
             this.Text = "Employee";
             this.Load += new System.EventHandler(this.Employee_Load);
@@ -339,7 +327,6 @@ namespace Car_Rental
         #endregion
 
         private System.Windows.Forms.Label EmpInfo_Label;
-        private System.Windows.Forms.Button Edit_Button;
         private System.Windows.Forms.TextBox FName_Tbox;
         private System.Windows.Forms.Label FName_Label;
         private System.Windows.Forms.Label MiddleInit_Label;
