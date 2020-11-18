@@ -16,5 +16,11 @@ namespace Car_Rental
         {
             InitializeComponent();
         }
+
+        private void Add_Button_Click(object sender, EventArgs e)
+        {
+            Employee e1 = new Employee();
+            e1.ShowDialog();
+        }
     }
 }

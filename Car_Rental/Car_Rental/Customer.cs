@@ -59,5 +59,15 @@ namespace Car_Rental
         {
 
         }
+
+        private void Save_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Save_Button_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
