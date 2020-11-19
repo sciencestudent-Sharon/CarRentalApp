@@ -16,5 +16,17 @@ namespace Car_Rental
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RentalReserve reserve = new RentalReserve();
+            reserve.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            RentalReturn ret = new RentalReturn();
+            ret.Show();
+        }
     }
 }
