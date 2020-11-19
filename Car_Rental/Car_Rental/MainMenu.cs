@@ -79,7 +79,7 @@ namespace Car_Rental
 
         private void btnReports_Click(object sender, EventArgs e)
         {
- 
+            OpenChildForm(new Reports(), sender);
         }
 
         private void btnHome_Click(object sender, EventArgs e)
