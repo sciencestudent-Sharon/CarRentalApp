@@ -30,5 +30,9 @@ namespace Car_Rental
 
         }
 
+        private void SearchCustomer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
