@@ -49,7 +49,7 @@ namespace Car_Rental
         }
 
         /// <summary>
-        /// This function inserts data to into the DataGridView
+        /// This function inserts data into the DataGridView
         /// </summary>
         private void populateData()
         {
@@ -83,7 +83,7 @@ namespace Car_Rental
                    BranchID_Tbox.Text.Trim() + ",'" +streetName_Tbox.Text.ToUpper().Trim() + "', '" + streetNum_Tbox.Text.ToUpper().Trim() + "', '" +
                    City_Tbox.Text.ToUpper().Trim() + "', '" + Province_Tbox.Text.ToUpper().Trim() + "', '" + Zip_Tbox.Text.ToUpper().Trim() + "', '" + PhNum_Tbox.Text.Trim() + "')";
 
-                MessageBox.Show(myCommand.CommandText); 
+                MessageBox.Show("Branch added!"); 
 
                 myCommand.ExecuteNonQuery();
 
@@ -108,7 +108,7 @@ namespace Car_Rental
                 {
                     //delete branch query
                     myCommand.CommandText = "delete from Branches where Branch_ID=" + BranchID_Tbox.Text + ";";
-                    MessageBox.Show(myCommand.CommandText);
+                    MessageBox.Show("Branch deleted!");
 
                     myCommand.ExecuteNonQuery();
 
@@ -138,7 +138,7 @@ namespace Car_Rental
                           "', province='" + Province_Tbox.Text.ToUpper().Trim() + "', zip='" + Zip_Tbox.Text.ToUpper().Trim() + "', phone_number='" + PhNum_Tbox.Text.Trim() + 
                           "' where Branch_ID=" + BranchID_Tbox.Text.Trim() + ";";
 
-                    MessageBox.Show(myCommand.CommandText);
+                    MessageBox.Show("Branch Updated!");
 
                     myCommand.ExecuteNonQuery();
 
