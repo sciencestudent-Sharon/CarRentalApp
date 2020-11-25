@@ -178,8 +178,8 @@ namespace Car_Rental
             // NOTE: key needs to be MANUALLY adjusted to SQL column
             Dictionary<string, string> TBoxes = new Dictionary<string, string>();
             TBoxes.Add("Branch_ID", BranchID_Tbox.Text);
-            TBoxes.Add("street_name", streetNum_Tbox.Text);
-            TBoxes.Add("street_number", streetName_Tbox.Text);
+            TBoxes.Add("street_number", streetNum_Tbox.Text);
+            TBoxes.Add("street_name", streetName_Tbox.Text);
             TBoxes.Add("city", City_Tbox.Text);
             TBoxes.Add("province", Province_Tbox.Text);
             TBoxes.Add("zip", Zip_Tbox.Text);
