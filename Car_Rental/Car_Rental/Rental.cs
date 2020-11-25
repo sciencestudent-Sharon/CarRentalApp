@@ -28,5 +28,10 @@ namespace Car_Rental
             RentalReturn ret = new RentalReturn();
             ret.Show();
         }
+
+        private void Rental_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
