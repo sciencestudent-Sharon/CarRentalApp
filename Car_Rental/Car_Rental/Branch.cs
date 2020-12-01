@@ -90,26 +90,34 @@ namespace Car_Rental
 
         private void Delete_Button_Click(object sender, EventArgs e)
         {
-            if (BranchID_Tbox.Text == "")
+            //ask for confirmation
+            DialogResult dr = MessageBox.Show("Are you sure you want to delete?",
+                "Confirmation", MessageBoxButtons.YesNo);
+            
+            if (dr == DialogResult.Yes)
             {
-                MessageBox.Show("Please fill missing information!");
-            }
-            else
-            {
-
-                try
+                if (BranchID_Tbox.Text == "")
                 {
-                    //delete branch query
-                    myCommand.CommandText = "delete from Branches where Branch_ID=" + BranchID_Tbox.Text + ";";
-                    MessageBox.Show("Branch deleted!");
-
-                    myCommand.ExecuteNonQuery();
-
-                    populateData();
+                    MessageBox.Show("Please fill missing information!");
                 }
-                catch (Exception e2)
+                else
                 {
-                    MessageBox.Show(e2.ToString(), "Error");
+
+                    try
+                    {
+                        //delete branch query
+                        myCommand.CommandText = "delete from Branches where Branch_ID=" + BranchID_Tbox.Text + ";";
+                        MessageBox.Show("Branch deleted!");
+
+                        myCommand.ExecuteNonQuery();
+
+                        populateData();
+                    }
+                    catch (Exception e2)
+                    {
+                        MessageBox.Show(e2.ToString(), "Error");
+                    }
+              
                 }
             }
         }
