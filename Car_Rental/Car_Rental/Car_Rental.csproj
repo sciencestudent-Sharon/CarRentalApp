@@ -64,6 +64,30 @@
     <Compile Include="Branch.Designer.cs">
       <DependentUpon>Branch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Rental.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rental.Designer.cs">
+      <DependentUpon>Rental.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalReserve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalReserve.Designer.cs">
+      <DependentUpon>RentalReserve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalReturn.Designer.cs">
+      <DependentUpon>RentalReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
     <Compile Include="SearchEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +122,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Branch.resx">
       <DependentUpon>Branch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rental.resx">
+      <DependentUpon>Rental.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalReserve.resx">
+      <DependentUpon>RentalReserve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalReturn.resx">
+      <DependentUpon>RentalReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SearchCustomer.resx">
       <DependentUpon>SearchCustomer.cs</DependentUpon>

@@ -184,6 +184,7 @@
             this.Controls.Add(this.textBoxVIN);
             this.Name = "SearchCustomer";
             this.Text = "Customer";
+            this.Load += new System.EventHandler(this.SearchCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
