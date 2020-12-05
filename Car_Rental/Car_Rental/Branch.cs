@@ -16,7 +16,7 @@ namespace Car_Rental
             InitializeComponent();
 
             // replace server name with your local name
-            String connectionString = "Server =DESKTOP-B46CGSV; Database = CarRentalDB; Trusted_Connection = yes;";
+            String connectionString = "Server =JESHERIN\\MSSQLSERVER01; Database = CarRentalDB; Trusted_Connection = yes;";
 
             SqlConnection myConnection = new SqlConnection(connectionString); // Timeout in seconds
 
