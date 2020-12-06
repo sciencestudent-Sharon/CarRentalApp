@@ -28,182 +28,371 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Label labelCarType;
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.labelCarModel = new System.Windows.Forms.Label();
-            this.textBoxCarModel = new System.Windows.Forms.TextBox();
-            this.labelCarColor = new System.Windows.Forms.Label();
-            this.textBoxCarColor = new System.Windows.Forms.TextBox();
-            this.labelCarVIN = new System.Windows.Forms.Label();
-            this.textBoxVIN = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            labelCarType = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.customersTable = new System.Windows.Forms.DataGridView();
+            this.CustomerSummary_Label = new System.Windows.Forms.Label();
+            this.firstName_Tbox = new System.Windows.Forms.TextBox();
+            this.PhNum_Label = new System.Windows.Forms.Label();
+            this.PhNum_Tbox = new System.Windows.Forms.TextBox();
+            this.Province_Label = new System.Windows.Forms.Label();
+            this.Province_Tbox = new System.Windows.Forms.TextBox();
+            this.City_Label = new System.Windows.Forms.Label();
+            this.City_Tbox = new System.Windows.Forms.TextBox();
+            this.Name_Label = new System.Windows.Forms.Label();
+            this.lastName_Tbox = new System.Windows.Forms.TextBox();
+            this.CustomerID_Label = new System.Windows.Forms.Label();
+            this.CustID_Tbox = new System.Windows.Forms.TextBox();
+            this.ClearSearch_Button = new System.Windows.Forms.Button();
+            this.Search_Button = new System.Windows.Forms.Button();
+            this.Delete_Button = new System.Windows.Forms.Button();
+            this.AddUpdate_Button = new System.Windows.Forms.Button();
+            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.first_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.last_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Driving_License = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.membership = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.street_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.street_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.apt_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.city = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.province = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.zip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTable)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelCarType
+            // customersTable
             // 
-            labelCarType.AutoSize = true;
-            labelCarType.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            labelCarType.Location = new System.Drawing.Point(81, 334);
-            labelCarType.Name = "labelCarType";
-            labelCarType.Size = new System.Drawing.Size(68, 20);
-            labelCarType.TabIndex = 36;
-            labelCarType.Text = "Address";
+            this.customersTable.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.customersTable.ColumnHeadersHeight = 29;
+            this.customersTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CustomerID,
+            this.first_name,
+            this.last_name,
+            this.Driving_License,
+            this.membership,
+            this.street_name,
+            this.street_number,
+            this.apt_number,
+            this.city,
+            this.province,
+            this.zip,
+            this.phone_number});
+            this.customersTable.Location = new System.Drawing.Point(33, 482);
+            this.customersTable.Margin = new System.Windows.Forms.Padding(4);
+            this.customersTable.Name = "customersTable";
+            this.customersTable.RowHeadersWidth = 51;
+            this.customersTable.Size = new System.Drawing.Size(1152, 390);
+            this.customersTable.TabIndex = 37;
+            this.customersTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.customersTable_CellContentClick);
             // 
-            // textBox1
+            // CustomerSummary_Label
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(175, 331);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(160, 26);
-            this.textBox1.TabIndex = 42;
+            this.CustomerSummary_Label.AutoSize = true;
+            this.CustomerSummary_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerSummary_Label.Location = new System.Drawing.Point(548, 447);
+            this.CustomerSummary_Label.Name = "CustomerSummary_Label";
+            this.CustomerSummary_Label.Size = new System.Drawing.Size(144, 25);
+            this.CustomerSummary_Label.TabIndex = 47;
+            this.CustomerSummary_Label.Text = "Search Results";
             // 
-            // dataGridView1
+            // firstName_Tbox
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(423, 156);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(447, 352);
-            this.dataGridView1.TabIndex = 37;
+            this.firstName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstName_Tbox.Location = new System.Drawing.Point(303, 220);
+            this.firstName_Tbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.firstName_Tbox.Name = "firstName_Tbox";
+            this.firstName_Tbox.Size = new System.Drawing.Size(160, 27);
+            this.firstName_Tbox.TabIndex = 3;
             // 
-            // labelCarModel
+            // PhNum_Label
             // 
-            this.labelCarModel.AutoSize = true;
-            this.labelCarModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarModel.Location = new System.Drawing.Point(45, 276);
-            this.labelCarModel.Name = "labelCarModel";
-            this.labelCarModel.Size = new System.Drawing.Size(113, 20);
-            this.labelCarModel.TabIndex = 35;
-            this.labelCarModel.Text = "Phone number";
+            this.PhNum_Label.AutoSize = true;
+            this.PhNum_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhNum_Label.Location = new System.Drawing.Point(144, 378);
+            this.PhNum_Label.Name = "PhNum_Label";
+            this.PhNum_Label.Size = new System.Drawing.Size(120, 20);
+            this.PhNum_Label.TabIndex = 59;
+            this.PhNum_Label.Text = "Phone Number";
             // 
-            // textBoxCarModel
+            // PhNum_Tbox
             // 
-            this.textBoxCarModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCarModel.Location = new System.Drawing.Point(175, 273);
-            this.textBoxCarModel.Name = "textBoxCarModel";
-            this.textBoxCarModel.Size = new System.Drawing.Size(160, 26);
-            this.textBoxCarModel.TabIndex = 34;
+            this.PhNum_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhNum_Tbox.Location = new System.Drawing.Point(303, 378);
+            this.PhNum_Tbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PhNum_Tbox.Name = "PhNum_Tbox";
+            this.PhNum_Tbox.Size = new System.Drawing.Size(199, 27);
+            this.PhNum_Tbox.TabIndex = 7;
             // 
-            // labelCarColor
+            // Province_Label
             // 
-            this.labelCarColor.AutoSize = true;
-            this.labelCarColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarColor.Location = new System.Drawing.Point(45, 220);
-            this.labelCarColor.Name = "labelCarColor";
-            this.labelCarColor.Size = new System.Drawing.Size(124, 20);
-            this.labelCarColor.TabIndex = 33;
-            this.labelCarColor.Text = "Customer Name";
+            this.Province_Label.AutoSize = true;
+            this.Province_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Province_Label.Location = new System.Drawing.Point(144, 327);
+            this.Province_Label.Name = "Province_Label";
+            this.Province_Label.Size = new System.Drawing.Size(74, 20);
+            this.Province_Label.TabIndex = 55;
+            this.Province_Label.Text = "Province";
             // 
-            // textBoxCarColor
+            // Province_Tbox
             // 
-            this.textBoxCarColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCarColor.Location = new System.Drawing.Point(175, 217);
-            this.textBoxCarColor.Name = "textBoxCarColor";
-            this.textBoxCarColor.Size = new System.Drawing.Size(160, 26);
-            this.textBoxCarColor.TabIndex = 32;
+            this.Province_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Province_Tbox.Location = new System.Drawing.Point(303, 325);
+            this.Province_Tbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Province_Tbox.Name = "Province_Tbox";
+            this.Province_Tbox.Size = new System.Drawing.Size(199, 27);
+            this.Province_Tbox.TabIndex = 6;
             // 
-            // labelCarVIN
+            // City_Label
             // 
-            this.labelCarVIN.AutoSize = true;
-            this.labelCarVIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCarVIN.Location = new System.Drawing.Point(59, 159);
-            this.labelCarVIN.Name = "labelCarVIN";
-            this.labelCarVIN.Size = new System.Drawing.Size(99, 20);
-            this.labelCarVIN.TabIndex = 31;
-            this.labelCarVIN.Text = "Customer ID";
+            this.City_Label.AutoSize = true;
+            this.City_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.City_Label.Location = new System.Drawing.Point(144, 276);
+            this.City_Label.Name = "City_Label";
+            this.City_Label.Size = new System.Drawing.Size(38, 20);
+            this.City_Label.TabIndex = 53;
+            this.City_Label.Text = "City";
             // 
-            // textBoxVIN
+            // City_Tbox
             // 
-            this.textBoxVIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxVIN.Location = new System.Drawing.Point(175, 156);
-            this.textBoxVIN.Name = "textBoxVIN";
-            this.textBoxVIN.Size = new System.Drawing.Size(160, 26);
-            this.textBoxVIN.TabIndex = 30;
+            this.City_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.City_Tbox.Location = new System.Drawing.Point(303, 276);
+            this.City_Tbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.City_Tbox.Name = "City_Tbox";
+            this.City_Tbox.Size = new System.Drawing.Size(199, 27);
+            this.City_Tbox.TabIndex = 5;
             // 
-            // btnSearch
+            // Name_Label
             // 
-            this.btnSearch.Location = new System.Drawing.Point(231, 475);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(145, 33);
-            this.btnSearch.TabIndex = 46;
-            this.btnSearch.Text = "Search";
-            this.btnSearch.UseVisualStyleBackColor = true;
+            this.Name_Label.AutoSize = true;
+            this.Name_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Name_Label.Location = new System.Drawing.Point(144, 220);
+            this.Name_Label.Name = "Name_Label";
+            this.Name_Label.Size = new System.Drawing.Size(146, 20);
+            this.Name_Label.TabIndex = 51;
+            this.Name_Label.Text = "Name (First, Last)";
             // 
-            // btnDelete
+            // lastName_Tbox
             // 
-            this.btnDelete.Location = new System.Drawing.Point(63, 475);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(145, 33);
-            this.btnDelete.TabIndex = 45;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.lastName_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastName_Tbox.Location = new System.Drawing.Point(474, 220);
+            this.lastName_Tbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lastName_Tbox.Name = "lastName_Tbox";
+            this.lastName_Tbox.Size = new System.Drawing.Size(160, 27);
+            this.lastName_Tbox.TabIndex = 4;
             // 
-            // btnAdd
+            // CustomerID_Label
             // 
-            this.btnAdd.Location = new System.Drawing.Point(63, 409);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(145, 33);
-            this.btnAdd.TabIndex = 44;
-            this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.CustomerID_Label.AutoSize = true;
+            this.CustomerID_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerID_Label.Location = new System.Drawing.Point(144, 168);
+            this.CustomerID_Label.Name = "CustomerID_Label";
+            this.CustomerID_Label.Size = new System.Drawing.Size(104, 20);
+            this.CustomerID_Label.TabIndex = 49;
+            this.CustomerID_Label.Text = "Customer ID";
             // 
-            // btnUpdate
+            // CustID_Tbox
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(231, 409);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(145, 33);
-            this.btnUpdate.TabIndex = 43;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.CustID_Tbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustID_Tbox.Location = new System.Drawing.Point(303, 168);
+            this.CustID_Tbox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.CustID_Tbox.Name = "CustID_Tbox";
+            this.CustID_Tbox.Size = new System.Drawing.Size(160, 27);
+            this.CustID_Tbox.TabIndex = 2;
+            // 
+            // ClearSearch_Button
+            // 
+            this.ClearSearch_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearSearch_Button.Location = new System.Drawing.Point(643, 348);
+            this.ClearSearch_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ClearSearch_Button.Name = "ClearSearch_Button";
+            this.ClearSearch_Button.Size = new System.Drawing.Size(139, 30);
+            this.ClearSearch_Button.TabIndex = 10;
+            this.ClearSearch_Button.Text = "Clear Search";
+            this.ClearSearch_Button.UseVisualStyleBackColor = true;
+            this.ClearSearch_Button.Click += new System.EventHandler(this.ClearSearch_Button_Click);
+            // 
+            // Search_Button
+            // 
+            this.Search_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Search_Button.Location = new System.Drawing.Point(643, 297);
+            this.Search_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Search_Button.Name = "Search_Button";
+            this.Search_Button.Size = new System.Drawing.Size(139, 30);
+            this.Search_Button.TabIndex = 8;
+            this.Search_Button.Text = "Search";
+            this.Search_Button.UseVisualStyleBackColor = true;
+            this.Search_Button.Click += new System.EventHandler(this.Search_Button_Click);
+            // 
+            // Delete_Button
+            // 
+            this.Delete_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete_Button.Location = new System.Drawing.Point(802, 297);
+            this.Delete_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Delete_Button.Name = "Delete_Button";
+            this.Delete_Button.Size = new System.Drawing.Size(139, 30);
+            this.Delete_Button.TabIndex = 9;
+            this.Delete_Button.Text = "Delete";
+            this.Delete_Button.UseVisualStyleBackColor = true;
+            this.Delete_Button.Click += new System.EventHandler(this.Delete_Button_Click);
+            // 
+            // AddUpdate_Button
+            // 
+            this.AddUpdate_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddUpdate_Button.Location = new System.Drawing.Point(420, 109);
+            this.AddUpdate_Button.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.AddUpdate_Button.Name = "AddUpdate_Button";
+            this.AddUpdate_Button.Size = new System.Drawing.Size(405, 32);
+            this.AddUpdate_Button.TabIndex = 1;
+            this.AddUpdate_Button.Text = "Add New / Update Existing";
+            this.AddUpdate_Button.UseVisualStyleBackColor = true;
+            this.AddUpdate_Button.Click += new System.EventHandler(this.AddUpdate_Button_Click);
+            // 
+            // CustomerID
+            // 
+            this.CustomerID.HeaderText = "Customer ID";
+            this.CustomerID.MinimumWidth = 6;
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.Width = 75;
+            // 
+            // first_name
+            // 
+            this.first_name.HeaderText = "First Name";
+            this.first_name.MinimumWidth = 6;
+            this.first_name.Name = "first_name";
+            this.first_name.Width = 80;
+            // 
+            // last_name
+            // 
+            this.last_name.HeaderText = "Last Name";
+            this.last_name.MinimumWidth = 6;
+            this.last_name.Name = "last_name";
+            this.last_name.Width = 80;
+            // 
+            // Driving_License
+            // 
+            this.Driving_License.HeaderText = "License";
+            this.Driving_License.MinimumWidth = 6;
+            this.Driving_License.Name = "Driving_License";
+            this.Driving_License.Width = 70;
+            // 
+            // membership
+            // 
+            this.membership.HeaderText = "Membership";
+            this.membership.MinimumWidth = 6;
+            this.membership.Name = "membership";
+            this.membership.Width = 90;
+            // 
+            // street_name
+            // 
+            this.street_name.HeaderText = "St. Name";
+            this.street_name.MinimumWidth = 6;
+            this.street_name.Name = "street_name";
+            this.street_name.Width = 80;
+            // 
+            // street_number
+            // 
+            this.street_number.HeaderText = "St. Number";
+            this.street_number.MinimumWidth = 6;
+            this.street_number.Name = "street_number";
+            this.street_number.Width = 80;
+            // 
+            // apt_number
+            // 
+            this.apt_number.HeaderText = "Apt. Number";
+            this.apt_number.MinimumWidth = 6;
+            this.apt_number.Name = "apt_number";
+            this.apt_number.Width = 80;
+            // 
+            // city
+            // 
+            this.city.HeaderText = "City";
+            this.city.MinimumWidth = 6;
+            this.city.Name = "city";
+            this.city.Width = 50;
+            // 
+            // province
+            // 
+            this.province.HeaderText = "Province";
+            this.province.MinimumWidth = 6;
+            this.province.Name = "province";
+            this.province.Width = 80;
+            // 
+            // zip
+            // 
+            this.zip.HeaderText = "Zip";
+            this.zip.MinimumWidth = 6;
+            this.zip.Name = "zip";
+            this.zip.Width = 40;
+            // 
+            // phone_number
+            // 
+            this.phone_number.HeaderText = "Phone Number";
+            this.phone_number.MinimumWidth = 6;
+            this.phone_number.Name = "phone_number";
+            this.phone_number.Width = 130;
             // 
             // SearchCustomer
             // 
             this.AccessibleName = "SearchCustoer";
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(916, 642);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(labelCarType);
-            this.Controls.Add(this.labelCarModel);
-            this.Controls.Add(this.textBoxCarModel);
-            this.Controls.Add(this.labelCarColor);
-            this.Controls.Add(this.textBoxCarColor);
-            this.Controls.Add(this.labelCarVIN);
-            this.Controls.Add(this.textBoxVIN);
+            this.ClientSize = new System.Drawing.Size(1221, 885);
+            this.Controls.Add(this.AddUpdate_Button);
+            this.Controls.Add(this.ClearSearch_Button);
+            this.Controls.Add(this.Search_Button);
+            this.Controls.Add(this.Delete_Button);
+            this.Controls.Add(this.firstName_Tbox);
+            this.Controls.Add(this.PhNum_Label);
+            this.Controls.Add(this.PhNum_Tbox);
+            this.Controls.Add(this.Province_Label);
+            this.Controls.Add(this.Province_Tbox);
+            this.Controls.Add(this.City_Label);
+            this.Controls.Add(this.City_Tbox);
+            this.Controls.Add(this.Name_Label);
+            this.Controls.Add(this.lastName_Tbox);
+            this.Controls.Add(this.CustomerID_Label);
+            this.Controls.Add(this.CustID_Tbox);
+            this.Controls.Add(this.CustomerSummary_Label);
+            this.Controls.Add(this.customersTable);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SearchCustomer";
             this.Text = "Customer";
             this.Load += new System.EventHandler(this.SearchCustomer_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.customersTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label labelCarModel;
-        private System.Windows.Forms.TextBox textBoxCarModel;
-        private System.Windows.Forms.Label labelCarColor;
-        private System.Windows.Forms.TextBox textBoxCarColor;
-        private System.Windows.Forms.Label labelCarVIN;
-        private System.Windows.Forms.TextBox textBoxVIN;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Button btnDelete;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.DataGridView customersTable;
+        private System.Windows.Forms.Label CustomerSummary_Label;
+        private System.Windows.Forms.TextBox firstName_Tbox;
+        private System.Windows.Forms.Label PhNum_Label;
+        private System.Windows.Forms.TextBox PhNum_Tbox;
+        private System.Windows.Forms.Label Province_Label;
+        private System.Windows.Forms.TextBox Province_Tbox;
+        private System.Windows.Forms.Label City_Label;
+        private System.Windows.Forms.TextBox City_Tbox;
+        private System.Windows.Forms.Label Name_Label;
+        private System.Windows.Forms.TextBox lastName_Tbox;
+        private System.Windows.Forms.Label CustomerID_Label;
+        private System.Windows.Forms.TextBox CustID_Tbox;
+        private System.Windows.Forms.Button ClearSearch_Button;
+        private System.Windows.Forms.Button Search_Button;
+        private System.Windows.Forms.Button Delete_Button;
+        private System.Windows.Forms.Button AddUpdate_Button;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CustomerID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn first_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn last_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Driving_License;
+        private System.Windows.Forms.DataGridViewTextBoxColumn membership;
+        private System.Windows.Forms.DataGridViewTextBoxColumn street_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn street_number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn apt_number;
+        private System.Windows.Forms.DataGridViewTextBoxColumn city;
+        private System.Windows.Forms.DataGridViewTextBoxColumn province;
+        private System.Windows.Forms.DataGridViewTextBoxColumn zip;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number;
     }
 }
