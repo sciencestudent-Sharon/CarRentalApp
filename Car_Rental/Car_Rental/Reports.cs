@@ -16,5 +16,28 @@ namespace Car_Rental
         {
             InitializeComponent();
         }
+
+        private void Submit_Click(object sender, EventArgs e)
+        {
+
+            int test = this.comboBox1.SelectedIndex;
+            switch (test)
+            {
+                case 0:
+                    this.ReeportText.Text = "Option 1";
+                    break;
+                case 1:
+                    this.ReeportText.Text = "Option 2";
+                    break;
+                case 2:
+                    this.ReeportText.Text = "Option 3";
+                    break;
+                default:
+                    this.ReeportText.Text = "Please Select a report";
+                    break;
+
+            }
+            
+        }
     }
 }
