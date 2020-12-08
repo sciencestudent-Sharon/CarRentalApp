@@ -75,6 +75,7 @@ namespace Car_Rental
             this.Controls.Add(this.comboBox1);
             this.Name = "Reports";
             this.Text = "Reports";
+            this.Load += new System.EventHandler(this.Reports_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
