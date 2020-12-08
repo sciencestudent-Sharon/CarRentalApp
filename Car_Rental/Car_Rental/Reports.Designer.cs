@@ -63,6 +63,7 @@ namespace Car_Rental
             this.Submit.TabIndex = 2;
             this.Submit.Text = "Submit";
             this.Submit.UseVisualStyleBackColor = true;
+            this.Submit.Click += new System.EventHandler(this.Submit_Click);
             // 
             // Reports
             // 
