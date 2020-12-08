@@ -106,7 +106,7 @@ namespace Car_Rental
                 Province_Tbox.Text = row.Cells["province"].Value.ToString().Trim();
                 PhNum_Tbox.Text = row.Cells["phone_number"].Value.ToString().Trim();
             }
-            catch (Exception e4)
+            catch (Exception)
             {
 
             }

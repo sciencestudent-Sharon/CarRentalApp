@@ -83,7 +83,6 @@ namespace Car_Rental
 
         #endregion
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox ReportTypeBox2;
         private System.Windows.Forms.Label ReeportText;
         private System.Windows.Forms.Button Submit;
     }
