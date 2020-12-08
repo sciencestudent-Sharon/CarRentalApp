@@ -27,5 +27,10 @@ namespace Car_Rental
             this.Hide();
             MessageBox.Show("Return Successful!");
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
