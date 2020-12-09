@@ -22,6 +22,7 @@ namespace Car_Rental
             InitializeComponent();
 
             // replace server name with your local name
+            //String connectionString = "Server =laptop-7d5uinee; Database = CarRentalDB; Trusted_Connection = yes;";
             String connectionString = "Server =laptop-7d5uinee; Database = CarRentalDB; Trusted_Connection = yes;";
 
             SqlConnection myConnection = new SqlConnection(connectionString); // Timeout in seconds

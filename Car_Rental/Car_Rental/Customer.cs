@@ -217,7 +217,7 @@ namespace Car_Rental
                 string changes = "Changes to:\n";
 
                 // check only if CustomerID is empty    ~SL
-                if (CustID_Tbox.Text == "" || checkCustID() == true)
+                if (CustID_Tbox.Text == "" || checkCustID() == false)
                 {
                     MessageBox.Show("Please review Customer ID.\nEmpty or non-existent customer ID.");
                     Required_Label.ForeColor = Color.Red;
