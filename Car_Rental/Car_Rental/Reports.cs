@@ -16,13 +16,17 @@ namespace Car_Rental
     {
         public SqlConnection myConnection;
         public SqlCommand myCommand;
+        public SqlCommand myCommand1;
         public SqlDataReader myReader;
+        public SqlDataReader myReader1;
+
 
         public Reports()
         {
             InitializeComponent();
             // replace server name with your local name
-            String connectionString = "Server =JESHERIN\\MSSQLSERVER01; Database = CarRentalDB; Trusted_Connection = yes;";
+            //String connectionString = "Server =JESHERIN\\MSSQLSERVER01; Database = CarRentalDB; Trusted_Connection = yes;";
+            String connectionString = "Server =laptop-7d5uinee; Database = CarRentalDB; Trusted_Connection = yes;";
 
             SqlConnection myConnection = new SqlConnection(connectionString); // Timeout in seconds
 
@@ -30,7 +34,9 @@ namespace Car_Rental
             {
                 myConnection.Open(); // Open connection
                 myCommand = new SqlCommand();
+                myCommand1 = new SqlCommand();
                 myCommand.Connection = myConnection; // Link the command stream to the connection
+                myCommand1.Connection = myConnection;
             }
             catch (Exception e)
             {
@@ -48,8 +54,9 @@ namespace Car_Rental
             switch (test)
             {
                 case 0:
-                    this.ReeportText.Text = "Option 1";
+                    findAvgRentalPeriod(myCommand1, myReader1);
                     break;
+
                 case 1:
                     this.ReeportText.Text = "Option 2";
                     break;
@@ -79,6 +86,35 @@ namespace Car_Rental
             }
             
         }
+
+        private void findAvgRentalPeriod(SqlCommand command, SqlDataReader reader)
+        {
+            var strBuild = new System.Text.StringBuilder();
+            int associatedBranchesVal = 0; int days = 0; int overallAvg = 0;
+
+            this.ReeportText.Text = "Option 1:\n\n";
+            this.ReeportText.Text += "Average rental period per associated branches (pick up AND drop off).\nRental period is reviewed in days.\n\n";
+            myCommand1.CommandText =
+                "select CONCAT(pickup_Branch_ID, return_Branch_ID) as \"Branches(PickUp, Dropoff)\", " +
+                "avg(rental_period) \"Average Rental Period(Days)\"" +
+                "from (select pickup_Branch_ID, return_Branch_ID, DATEDIFF(d, pickup_date, return_date) " +
+                "rental_period from Rental_Trans) as RentalPeriod group by pickup_Branch_ID, return_Branch_ID; ";
+
+            this.ReeportText.Text += "Branches (Pickup, Dropoff)     Average Rental Period (Days)\n";
+            myReader1 = myCommand1.ExecuteReader();
+            while (myReader1.Read())
+            {
+
+                strBuild.Append(myReader1[0].ToString() + "                              "); // tab doesn't work  ~SL
+                strBuild.Append(myReader1[1].ToString() + " \n");
+                string daysStr = myReader1[1].ToString(); associatedBranchesVal += 1; days += int.Parse(daysStr);
+            }
+            overallAvg = days / associatedBranchesVal;
+            this.ReeportText.Text += strBuild.ToString();
+            this.ReeportText.Text += "\n\nOverall average rental period was: " + overallAvg + " days.";
+            myReader1.Close();
+        }
+
 
         private void Reports_Load(object sender, EventArgs e)
         {
