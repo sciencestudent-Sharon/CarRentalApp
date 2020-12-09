@@ -26,7 +26,7 @@ namespace Car_Rental
             InitializeComponent();
             // replace server name with your local name
             //String connectionString = "Server =JESHERIN\\MSSQLSERVER01; Database = CarRentalDB; Trusted_Connection = yes;";
-            String connectionString = "Server =laptop-7d5uinee; Database = CarRentalDB; Trusted_Connection = yes;";
+            String connectionString = "Server =laptop-7d5uinee; Database = CarRentalDB; Trusted_Connection = yes;MultipleActiveResultSets=true;";
 
             SqlConnection myConnection = new SqlConnection(connectionString); // Timeout in seconds
 
@@ -89,6 +89,7 @@ namespace Car_Rental
 
         private void findAvgRentalPeriod(SqlCommand command, SqlDataReader reader)
         {
+            string toDisplay = "";
             var strBuild = new System.Text.StringBuilder();
             int associatedBranchesVal = 0; int days = 0; int overallAvg = 0;
 
@@ -109,10 +110,11 @@ namespace Car_Rental
                 strBuild.Append(myReader1[1].ToString() + " \n");
                 string daysStr = myReader1[1].ToString(); associatedBranchesVal += 1; days += int.Parse(daysStr);
             }
+            myReader1.Close();
             overallAvg = days / associatedBranchesVal;
             this.ReeportText.Text += strBuild.ToString();
             this.ReeportText.Text += "\n\nOverall average rental period was: " + overallAvg + " days.";
-            myReader1.Close();
+            toDisplay = this.ReeportText.Text;
         }
 
 
