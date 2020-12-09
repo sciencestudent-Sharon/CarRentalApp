@@ -176,7 +176,7 @@ namespace Car_Rental
                 BranchID_Tbox.Text = row.Cells["Branch_ID"].Value.ToString().Trim();
 
             }
-            catch (Exception e2)
+            catch (Exception)
             {
 
             }

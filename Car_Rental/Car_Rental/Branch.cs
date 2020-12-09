@@ -268,7 +268,7 @@ namespace Car_Rental
                 Zip_Tbox.Text = row.Cells["zip"].Value.ToString().Trim();
                 PhNum_Tbox.Text = row.Cells["phone_number"].Value.ToString().Trim();
             }
-            catch (Exception e2)
+            catch (Exception)
             {
 
             }
