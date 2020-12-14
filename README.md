@@ -1,11 +1,11 @@
-# CMPT291_Assignment
+# Car Rental App
 ## Group 1
 
 Group Members:
-* -Erin Ha
-* -Jesherin Rondeau
-* -Josephine Estudillo
-* -Sharon Lee
+* -Erin H
+* -Jesherin R
+* -Josephine E
+* -Sharon L
 
 
 Test
